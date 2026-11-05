@@ -1,9 +1,17 @@
-﻿string nomeProduto = "Notebook";
-int quantidade = 2;
-double preco = 3500.00;
+﻿
 
 Console.WriteLine (" === MINHA LOJA ===");
 
-Console.WriteLine("Produto: "+ nomeProduto);
-Console.WriteLine("Quantidade: "+ quantidade);
-Console.WriteLine ("Preço: " + preco );
+Console.WriteLine("Digite o nome do produto : ");
+string? nomeProduto = Console.ReadLine();
+
+Console.WriteLine ("Digite a quantidade: ");
+int quantidade = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Digite o preço ");
+double preco = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine ("\n=== PRODUTO CADASTRADO ===");
+Console.WriteLine($"Produto: {nomeProduto}");
+Console.WriteLine($"Quantidade: {quantidade}");
+Console.WriteLine($"Preço: R$ {preco:F2}");
