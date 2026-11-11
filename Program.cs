@@ -38,6 +38,6 @@ else
 Console.WriteLine("\n=== PRODUTO CADASTRADO ===");
 Console.WriteLine($"Produto: {nomeProduto}");
 Console.WriteLine($"Quantidade: {quantidade}");
-Console.WriteLine($"Preço: R$ {preco:F2}");
+Console.WriteLine($"Preço unitário: R$ {preco:F2}");
 Console.WriteLine($"Valor total do produto {nomeProduto}: R$ {totalCompra:F2}");
 Console.WriteLine($"Valor final com desconto: R$ {descontoTotal:F2}");
